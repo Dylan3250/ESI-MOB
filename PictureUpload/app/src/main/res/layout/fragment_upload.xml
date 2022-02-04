@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="uploadViewModel"
+            type="dylanbricar.android.pictureupload.screens.upload.UploadViewModel" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.upload.UploadFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/picker_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:contentDescription="@string/online_pictures"
+                android:maxHeight="400dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/camera"
+                    app:backgroundTint="@color/teal_700" />
+
+                <Button
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/galery"
+                    app:backgroundTint="@color/teal_700" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pictureName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/nom_de_l_image"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:text="@={uploadViewModel.pictureNameContent}" />
+
+            <Button
+                android:id="@+id/sendPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sendPicture"
+                android:layout_marginBottom="18dp"
+                app:backgroundTint="@color/teal_200" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PictureUpload</string>
+    <string name="menu_about">A propos</string>
+    <string name="menu_listing">Mes photos</string>
+    <string name="menu_upload">Ajouter</string>
+    <string name="menu_logs">Informations</string>
+    <string name="about_text">Matricule : 54027\n\nPrénom : Dylan\n\nNom : BRICAR</string>
+    <string name="upload_label">Upload d\'une image</string>
+    <string name="about_label">A propos</string>
+    <string name="deconnection_label">Déconnexion</string>
+    <string name="index_label">Accueil</string>
+    <string name="logs_label">Dernières connexions</string>
+    <string name="connection_label">Connexion</string>
+    <string name="camera">Caméra</string>
+    <string name="galery">Galerie</string>
+    <string name="sendPicture">Envoyer l\'image</string>
+    <string name="nom_de_l_image">Nom de l\'image</string>
+    <string name="photo_value">Photo</string>
+    <string name="tools_emails_users">test@test.com - samedi 22/10/2021 à 02:12</string>
+    <string name="online_pictures">Images en lignes</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listingViewModel"
+            type="dylanbricar.android.pictureupload.screens.listing.ListingViewModel" />
+    </data>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:verticalSpacing="4dp"
+        tools:context=".screens.upload.ListingFragment" />
+
+</layout>
